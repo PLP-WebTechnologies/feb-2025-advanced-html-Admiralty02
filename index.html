@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <h1 class="text-3xl font-semibold text-blue-600 mb-8">Welcome to My Webpage</h1>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Ordered List (Roman Numerals)</h2>
+    <ol type="I" class="list-decimal list-inside mb-6">
+        <li class="text-gray-700">Item 1</li>
+        <li class="text-gray-700">Item 2</li>
+        <li class="text-gray-700">Item 3</li>
+        <li class="text-gray-700">Item 4</li>
+        <li class="text-gray-700">Item 5</li>
+    </ol>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">External Image</h2>
+    <img src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Beautiful Landscape" class="rounded-lg shadow-md mb-8 max-w-full h-auto">
+    <p class="text-sm text-gray-500 italic mb-8">Image Source: pexels.com</p>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Table</h2>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full leading-normal shadow-md rounded-lg overflow-hidden">
+            <thead class="bg-gray-200 text-gray-700">
+                <tr>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">Name</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">Address</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">Mobile</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">Email</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                <tr>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">John Doe</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">123 Main St, Anytown</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">+1 555-1234</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">Jane Smith</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">456 Oak Ave, Someplace</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">+1 555-5678</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">jane.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">Bob Johnson</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">789 Pine Ln, Othercity</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">+1 555-9012</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">bob.johnson@example.com</td>
+                </tr>
+                <tr>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">Alice Brown</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">234 Elm St, Anytown</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">+1 555-2345</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">alice.brown@example.com</td>
+                </tr>
+                <tr>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">Peter White</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">567 Maple Dr, Someplace</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">+1 555-6789</td>
+                    <td class="px-5 py-5 border-b border-gray-200 text-sm">peter.white@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Registration Form</h2>
+    <form class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <p id="name-error" class="text-red-500 text-xs italic" style="display: none;"></p>
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+             <p id="email-error" class="text-red-500 text-xs italic" style="display: none;"></p>
+        </div>
+        <div class="mb-4">
+            <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <p id="password-error" class="text-red-500 text-xs italic" style="display: none;"></p>
+        </div>
+        <div class="mb-4">
+            <label for="dob" class="block text-gray-700 text-sm font-bold mb-2">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+
+        <div class="mb-4">
+            <label for="gender" class="block text-gray-700 text-sm font-bold mb-2">Gender:</label>
+            <div class="flex items-center">
+                <input type="radio" id="gender-male" name="gender" value="male" class="mr-2">
+                <label for="gender-male" class="text-gray-700 text-sm mr-4">Male</label>
+                <input type="radio" id="gender-female" name="gender" value="female" class="mr-2">
+                <label for="gender-female" class="text-gray-700 text-sm">Female</label>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="role" class="block text-gray-700 text-sm font-bold mb-2">Role:</label>
+            <select id="role" name="role" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="" disabled selected>Select your role</option>
+                <option value="admin">Admin</option>
+                <option value="editor">Editor</option>
+                <option value="subscriber">Subscriber</option>
+            </select>
+            <p id="role-error" class="text-red-500 text-xs italic" style="display: none;"></p>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2">Interests:</label>
+            <div class="flex items-center">
+                <input type="checkbox" id="interest-news" name="interests" value="news" class="mr-2">
+                <label for="interest-news" class="text-gray-700 text-sm mr-4">News</label>
+                <input type="checkbox" id="interest-sports" name="interests" value="sports" class="mr-2">
+                <label for="interest-sports" class="text-gray-700 text-sm mr-4">Sports</label>
+                <input type="checkbox" id="interest-tech" name="interests" value="tech" class="mr-2">
+                <label for="interest-tech" class="text-gray-700 text-sm">Technology</label>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <input type="submit" value="Register" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer">
+        </div>
+    </form>
+    <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        let hasErrors = false;
+
+        const nameInput = document.getElementById('name');
+        const nameError = document.getElementById('name-error');
+        if (!nameInput.value.trim()) {
+            nameError.textContent = 'Name is required';
+            nameError.style.display = 'block';
+            hasErrors = true;
+        } else {
+            nameError.style.display = 'none';
+        }
+
+        const emailInput = document.getElementById('email');
+        const emailError = document.getElementById('email-error');
+        const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        if (!emailInput.value.trim()) {
+            emailError.textContent = 'Email is required';
+            emailError.style.display = 'block';
+            hasErrors = true;
+        } else if (!emailRegex.test(emailInput.value)) {
+            emailError.textContent = 'Invalid email format';
+            emailError.style.display = 'block';
+            hasErrors = true;
+        } else {
+            emailError.style.display = 'none';
+        }
+
+        const passwordInput = document.getElementById('password');
+        const passwordError = document.getElementById('password-error');
+        if (!passwordInput.value.trim()) {
+            passwordError.textContent = 'Password is required';
+            passwordError.style.display = 'block';
+            hasErrors = true;
+        } else if (passwordInput.value.length < 8) {
+            passwordError.textContent = 'Password must be at least 8 characters long';
+            passwordError.style.display = 'block';
+            hasErrors = true;
+        } else {
+            passwordError.style.display = 'none';
+        }
+        
+        const roleInput = document.getElementById('role');
+        const roleError = document.getElementById('role-error');
+        if (!roleInput.value) {
+            roleError.textContent = 'Please select a role';
+            roleError.style.display = 'block';
+            hasErrors = true;
+        } else {
+            roleError.style.display = 'none';
+        }
+
+        if (hasErrors) {
+            event.preventDefault();
+        }
+    });
+    </script>
+</body>
+</html>
